@@ -60,7 +60,7 @@ def handle_message(event: Event):
         user_message = event.message.text  # 使用者的訊息
         app.logger.info(f"收到的訊息: {user_message}")
 
-       if user_message == "附近的餐廳":
+        if user_message == "附近的餐廳":
             reply_text = get_nearby_restaurants()
         elif user_message == "課表":
             reply_text = "這是你的課表～"
